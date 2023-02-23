@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Hanken';
+    src: url(/results-resume/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken', 'sans-serif';
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        display: flex;
+        background-color: #fff;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.226);
+        border-radius: 20px;
+        
+
+        .container-left{
+            width: 280px;
+            background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            color: #fff;
+            border-radius: 20px;
+
+            .content{
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h3{
+                    font-weight: normal;
+                    font-size: 16px;
+                }
+
+                .circle{
+                    text-align: center;
+                    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+                    padding: 30px;
+                    margin: 30px 0;
+                    border-radius: 50%;
+
+                    .final-result{
+                        font-size: 40px;
+                        font-weight: bold;
+                        margin: 0px 5px;
+                    }
+
+                    p{
+                        color: #ccc;
+                        font-size: 13px;
+                    }
+                }
+
+                .info-result{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 10px;
+
+                    h1{
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 14px;
+                        text-align: center;
+                        color: #ddd;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+
+        .container-right{
+            /*flex: 1;*/
+            width: 280px;
+            // border-radius: 0 20px 20px 0;
+
+            .content{
+                padding: 25px;
+
+                h2{
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    color: #2f3857;
+                }
+
+                .results{
+                    margin-bottom: 15px;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 8px;
+                    border-radius: 10px;
+
+                    .type{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    .result{
+                        color: #9591a0;
+                        font-weight: bolder;
+                        font-size: 14px;
+
+                        .number-final{
+                            color: #363d4f;
+                        }
+                    }
+                }
+
+                #reaction{
+                    background-color: #FFF7F5;
+                    
+                    .type{
+                        color: hsl(0, 100%, 67%);
+                    }
+                }
+
+                #memory{
+                    background-color: #FFFCF0;
+
+                    .type{
+                        color: hsl(39, 100%, 56%);
+                    }
+                }
+
+                #verbal{
+                    background-color: #D7F1EF;
+
+                    .type{
+                        color: hsl(166, 100%, 37%);
+                    }
+                }
+
+                #visual{
+                    background-color: #F6F4FC;
+                    margin-bottom: 30px;
+
+                    .type{
+                        color: hsl(234, 85%, 45%);
+                    }
+                }
+
+                .btn-continue{
+                    background-color: #303C58;
+                    color: #fff;
+                    border: 0;
+                    padding: 12px;
+                    width: 100%;
+                    border-radius: 25px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+
+                .btn-continue:hover,
+                .btn-continue:focus{
+                    // background: linear-gradient(to bottom, #6340fe, #362bdf);
+                    background-color: #6340fe;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 572px){
+    main .container{
+        flex-direction: column;
+        border-radius: 0;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+
+        .container-left{
+            border-radius: 0;
+
+            .content{
+                .info-result{
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

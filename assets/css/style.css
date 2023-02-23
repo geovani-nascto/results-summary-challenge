@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'Hanken';
+  src: url(/results-resume/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Hanken', 'sans-serif';
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.226);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.226);
+  border-radius: 20px;
+}
+
+main .container .container-left {
+  width: 280px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
+  background-image: linear-gradient(to bottom, #7857ff, #2e2be9);
+  color: #fff;
+  border-radius: 20px;
+}
+
+main .container .container-left .content {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .container-left .content h3 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+main .container .container-left .content .circle {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4e21ca), to(rgba(36, 33, 202, 0)));
+  background: linear-gradient(to bottom, #4e21ca, rgba(36, 33, 202, 0));
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 50%;
+}
+
+main .container .container-left .content .circle .final-result {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px 5px;
+}
+
+main .container .container-left .content .circle p {
+  color: #ccc;
+  font-size: 13px;
+}
+
+main .container .container-left .content .info-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+main .container .container-left .content .info-result h1 {
+  font-size: 22px;
+}
+
+main .container .container-left .content .info-result p {
+  font-size: 14px;
+  text-align: center;
+  color: #ddd;
+  margin-top: 15px;
+}
+
+main .container .container-right {
+  /*flex: 1;*/
+  width: 280px;
+}
+
+main .container .container-right .content {
+  padding: 25px;
+}
+
+main .container .container-right .content h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #2f3857;
+}
+
+main .container .container-right .content .results {
+  margin-bottom: 15px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+main .container .container-right .content .results .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main .container .container-right .content .results .result {
+  color: #9591a0;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+main .container .container-right .content .results .result .number-final {
+  color: #363d4f;
+}
+
+main .container .container-right .content #reaction {
+  background-color: #FFF7F5;
+}
+
+main .container .container-right .content #reaction .type {
+  color: #ff5757;
+}
+
+main .container .container-right .content #memory {
+  background-color: #FFFCF0;
+}
+
+main .container .container-right .content #memory .type {
+  color: #ffb01f;
+}
+
+main .container .container-right .content #verbal {
+  background-color: #D7F1EF;
+}
+
+main .container .container-right .content #verbal .type {
+  color: #00bd91;
+}
+
+main .container .container-right .content #visual {
+  background-color: #F6F4FC;
+  margin-bottom: 30px;
+}
+
+main .container .container-right .content #visual .type {
+  color: #1125d4;
+}
+
+main .container .container-right .content .btn-continue {
+  background-color: #303C58;
+  color: #fff;
+  border: 0;
+  padding: 12px;
+  width: 100%;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .container .container-right .content .btn-continue:hover,
+main .container .container-right .content .btn-continue:focus {
+  background-color: #6340fe;
+}
+
+@media (max-width: 572px) {
+  main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 0;
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+  }
+  main .container .container-left {
+    border-radius: 0;
+  }
+  main .container .container-left .content .info-result p {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
